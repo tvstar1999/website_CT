@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a website</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="../website/lightbox_dist/css/lightbox.min.css">
+  <style>
+    body {
+      background-color:#404040; 
+      background-image:url(../website/img/sky_main.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+      cursor: url(../website/img/cursor_GSOS.png), auto;
+    }
+    
+    p, span {
+      text-align:center;
+      color:#8c8c8c; 
+      text-shadow:1px 1px 0 #000000;
+      font-size:15px;  
+      font-family:Arial, Helvetica;
+    }
+    
+    .border {
+      border-style:inset;
+    }
+
+    a:link {
+      color: lightblue;
+    }
+
+    a:visited {
+      color: darkblue;
+    }
+
+    .img_center {
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+      width:20%;
+      height:auto;
+    }
+    
+    .center_content{
+      position:absolute; 
+      top:50%; 
+      left:50%; 
+      transform:translate(-50%, -50%);
+    }
+    .center_content_alt{
+      position:absolute; 
+      top:30%; 
+      left:50%; 
+      transform:translate(-50%, -50%);
+    }
+     
+    .div_container_WEB{
+      display:inline-block;
+      overflow:auto;
+      width:100%;
+      /* set width to 100% for page view, 500px for container view */
+      height:500%;
+    }
+
+    .div_ABOUT{
+      position:static;
+      padding:5px;
+      margin:5% 10% 5% 10%;
+      background-color:#1a1a1a;
+      width:200px; 
+    }
+    .div_ABOUT_CARD{
+      position:relative; 
+      background-color:#1a1a1a;
+      width:200px; 
+      left:40px;
+    }    
+    .div_ABOUT_CARD p{
+      background-color:#404040;
+      text-align:left;
+    }
+
+    .div_container_MISC{ 
+      position:relative;
+      display:flex;
+      flex-flow: column wrap;
+      overflow:clip;
+      padding:5px;
+      margin:5% 5% 5% 5%;
+      border-style:inset;
+      border-width:thick;
+      background-color:#5a5a5a; 
+      width:360px;
+      height:500px;
+    }
+    .div_MISC{
+      position:relative;
+      overflow:clip;
+      margin:20px 5px 20px 55px;
+      background-color:#4a4a4a; 
+      width:250px; 
+      height:120px; 
+    }
+    .div_MISC_desc{
+      position:static;
+      overflow:auto;
+      margin-top:70px;
+      background-color:#4a4a4a; 
+      width:120px; 
+      height:50px; 
+    }
+
+    .div_wrap {
+      position:relative;
+      margin:35px 10px 10px 10%;
+      border:0px;
+    }
+    .div_disp {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 100, 150, 0.70);
+      color: #ffffff;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity .2s, visibility .2s;
+    }
+    .div_wrap:hover .div_disp {
+      visibility: visible;
+      opacity: 1;
+    }
+
+  </style>
+  </head>
+  
+  <body>
+    <div class ="div_container_WEB">
+
+        <!--section div-->
+        <div style = "display:flex; flex-direction:row; justify-content:center; margin: 0px;">
+
+        <!--section X-->
+        <div class="div_container_MISC">
+		<!--MISC1-->
+        <div class="div_MISC">
+		<br>
+		<br>
+		<br>
+		<br>
+        <p>it've got a nice lil' count from you...</p>
+        </div>
+
+        <!--MISC2-->
+        <div class ="div_MISC" style="display:inline; float:none; text-align:center;">
+		<br>
+		<br>
+        <img src="../website/img/arrow_blue_right.gif">
+		<script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=89505887"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=89505887" /></noscript>
+		<img style="transform: scaleX(-1)" src="../website/img/arrow_blue_right.gif">
+		<p>even though you gave up on ignoring...</p>
+        </div>
+		
+		<!--MISC3-->
+        <div class ="div_MISC">
+        <p>I plaster all over.</p>
+        </div>
+
+        <!--section end-->
+        </div>
+
+        <!--style div end-->
+        </div>
+
+    <!--page end-->
+    </div>
+    <br>
+    
+    <script src="../website/lightbox_dist/js/lightbox-plus-jquery.min.js"></script>
+  </body>
+</html>
